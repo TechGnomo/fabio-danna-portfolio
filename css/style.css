@@ -1172,3 +1172,196 @@ footer {
     text-align: left;
   }
 }
+
+/* MOBILE NAVIGATION FIX */
+
+.mobile-menu-btn {
+  display: none;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    position: relative;
+  }
+
+  .mobile-menu-btn {
+    display: grid;
+    place-items: center;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.4rem;
+    padding: 1rem;
+    background: rgba(15, 17, 23, 0.98);
+    border: 1px solid var(--border);
+    border-radius: 0 0 22px 22px;
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 0.85rem 1rem;
+    border-radius: 14px;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .nav-button {
+    text-align: center;
+    margin-top: 0.4rem;
+  }
+}
+
+/* MOBILE HERO IMPROVEMENTS */
+
+@media (max-width: 760px) {
+  .hero {
+    min-height: auto;
+    padding: 3rem 0;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    font-size: clamp(2.3rem, 13vw, 3.4rem);
+    line-height: 0.95;
+    letter-spacing: -1.8px;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .eyebrow {
+    font-size: 0.8rem;
+  }
+
+  .section-header h2,
+  .cta h2 {
+    font-size: clamp(1.9rem, 10vw, 2.7rem);
+  }
+
+  .section-header p,
+  .cta p {
+    font-size: 1rem;
+  }
+}
+
+/* MOBILE CARD SPACING */
+
+@media (max-width: 560px) {
+  .container {
+    width: min(100% - 1.4rem, 1120px);
+  }
+
+  .profile-card,
+  .info-card,
+  .story-card,
+  .qualification-card,
+  .value-card,
+  .strategy-card,
+  .availability-card,
+  .transferable-card,
+  .overview-card,
+  .skill-card,
+  .contact-card,
+  .resume-card,
+  .resume-section,
+  .role-card,
+  .project-card {
+    border-radius: 20px;
+  }
+
+  .project-content,
+  .info-card,
+  .story-card,
+  .qualification-card,
+  .value-card,
+  .strategy-card,
+  .availability-card,
+  .transferable-card,
+  .overview-card,
+  .skill-card,
+  .contact-card,
+  .resume-card,
+  .resume-section,
+  .role-card {
+    padding: 1.15rem;
+  }
+
+  .cta {
+    border-radius: 22px;
+  }
+}
+
+/* MOBILE PROJECT CARDS */
+
+@media (max-width: 560px) {
+  .project-visual,
+  .project-image {
+    height: 135px;
+  }
+
+  .project-content h3 {
+    font-size: 1.15rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-link {
+    width: 100%;
+  }
+}
+
+/* MOBILE RESUME FIX */
+
+@media (max-width: 560px) {
+  .resume-item-top {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .resume-section h2 {
+    font-size: 1.35rem;
+  }
+
+  .bullet-list {
+    margin-left: 1rem;
+  }
+}
+
+/* MOBILE CONTACT FORM FIX */
+
+@media (max-width: 560px) {
+  input,
+  select,
+  textarea {
+    font-size: 1rem;
+  }
+
+  .form-card h2 {
+    font-size: 1.7rem;
+  }
+}

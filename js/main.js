@@ -40,3 +40,29 @@ if (contactForm && formMessage) {
     contactForm.reset();
   });
 }
+// MOBILE MENU
+
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const navLinks = document.getElementById("navLinks");
+
+if (mobileMenuBtn && navLinks) {
+  mobileMenuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+
+    if (navLinks.classList.contains("show")) {
+      mobileMenuBtn.textContent = "×";
+      mobileMenuBtn.setAttribute("aria-label", "Close menu");
+    } else {
+      mobileMenuBtn.textContent = "☰";
+      mobileMenuBtn.setAttribute("aria-label", "Open menu");
+    }
+  });
+
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+      mobileMenuBtn.textContent = "☰";
+      mobileMenuBtn.setAttribute("aria-label", "Open menu");
+    });
+  });
+}
