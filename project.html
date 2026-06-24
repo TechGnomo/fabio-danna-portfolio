@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projects | Fabio D'Anna</title>
+
+ <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">Fabio<span>.</span></a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="project.html" class="active">Projects</a>
+        <a href="contact.html" class="nav-button">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Portfolio projects
+        </div>
+
+        <h1>
+          Practical projects built around
+          <span class="gradient-text">real problems, real users and real business needs.</span>
+        </h1>
+
+        <p class="hero-description">
+          My portfolio is focused on projects that show practical ability: building interfaces, organising data,
+          solving workflow problems, and turning real-life experience into useful digital tools.
+          The goal is simple: demonstrate that I can build clean, useful and reliable solutions as a
+          <strong>junior developer</strong> or <strong>IT professional</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured projects</h2>
+          <p>
+            These projects are selected to show a mix of web development, JavaScript logic, business thinking,
+            user interface design and practical problem solving.
+          </p>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="app">Apps</button>
+          <button class="filter-btn" data-filter="business">Business Tools</button>
+          <button class="filter-btn" data-filter="it">IT Support</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT 1 -->
+          <article class="project-card" data-category="app business">
+            <div class="project-visual">
+              <span class="status-badge status-progress">In Progress</span>
+              <div class="project-icon">💰</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-category">Finance App</div>
+              <h3>Budget Planner App</h3>
+
+              <p>
+                A weekly finance planner designed to track income, expenses, debt payments and savings goals.
+              </p>
+
+              <ul class="project-features">
+                <li>Weekly income and expense tracking</li>
+                <li>Debt payment progress</li>
+                <li>Savings goal visibility</li>
+                <li>Conditional status indicators</li>
+              </ul>
+
+              <div class="project-tech">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Local Storage</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" class="project-link primary">Live Demo</a>
+                <a href="#" class="project-link secondary">View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="project-card" data-category="app">
+            <div class="project-visual">
+              <span class="status-badge status-planned">Planned</span>
+              <div class="project-icon">🏍️</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-category">Maintenance App</div>
+              <h3>Motorcycle Maintenance Tracker</h3>
+
+              <p>
+                A practical tracker for motorcycle service intervals, fuel usage, chain maintenance and registration dates.
+              </p>
+
+              <ul class="project-features">
+                <li>Oil and filter service tracking</li>
+                <li>Tyre pressure reminders</li>
+                <li>Chain cleaning and adjustment logs</li>
+                <li>Registration and insurance reminders</li>
+              </ul>
+
+              <div class="project-tech">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">CRUD</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" class="project-link primary">Live Demo</a>
+                <a href="#" class="project-link secondary">View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="project-card" data-category="business app">
+            <div class="project-visual">
+              <span class="status-badge status-planned">Planned</span>
+              <div class="project-icon">📅</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-category">Business Tool</div>
+              <h3>Hospitality Staff Roster Tool</h3>
+
+              <p>
+                A simple rostering tool based on real hospitality operations, staff availability and shift planning.
+              </p>
+
+              <ul class="project-features">
+                <li>Staff list and role management</li>
+                <li>Weekly shift planning</li>
+                <li>Availability tracking</li>
+                <li>Estimated labour cost overview</li>
+              </ul>
+
+              <div class="project-tech">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Forms</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" class="project-link primary">Live Demo</a>
+                <a href="#" class="project-link secondary">View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4 -->
+          <article class="project-card" data-category="web business">
+            <div class="project-visual">
+              <span class="status-badge status-progress">In Progress</span>
+              <div class="project-icon">🍷</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-category">Web App</div>
+              <h3>Wine Pairing Web App</h3>
+
+              <p>
+                A small web app that helps pair dishes with wines based on flavour, style and dining experience.
+              </p>
+
+              <ul class="project-features">
+                <li>Dish and wine selection</li>
+                <li>Pairing recommendations</li>
+                <li>Simple user-friendly interface</li>
+                <li>Hospitality-focused use case</li>
+              </ul>
+
+              <div class="project-tech">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Data Objects</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" class="project-link primary">Live Demo</a>
+                <a href="#" class="project-link secondary">View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 5 -->
+          <article class="project-card" data-category="it web">
+            <div class="project-visual">
+              <span class="status-badge status-planned">Planned</span>
+              <div class="project-icon">🧰</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-category">IT Support</div>
+              <h3>IT Support Knowledge Base</h3>
+
+              <p>
+                A searchable knowledge base for common IT support issues, troubleshooting steps and user-friendly guides.
+              </p>
+
+              <ul class="project-features">
+                <li>Common support issue categories</li>
+                <li>Searchable troubleshooting articles</li>
+                <li>Clear step-by-step solutions</li>
+                <li>Beginner-friendly technical language</li>
+              </ul>
+
+              <div class="project-tech">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Search Filter</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" class="project-link primary">Live Demo</a>
+                <a href="#" class="project-link secondary">View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 6 -->
+          <article class="project-card" data-category="app">
+            <div class="project-visual">
+              <span class="status-badge status-planned">Planned</span>
+              <div class="project-icon">✅</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-category">Productivity App</div>
+              <h3>Personal Task Dashboard</h3>
+
+              <p>
+                A dashboard for tracking study goals, personal projects, habits and weekly progress.
+              </p>
+
+              <ul class="project-features">
+                <li>Task creation and completion</li>
+                <li>Study roadmap tracking</li>
+                <li>Weekly progress overview</li>
+                <li>Simple dashboard layout</li>
+              </ul>
+
+              <div class="project-tech">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Local Storage</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" class="project-link primary">Live Demo</a>
+                <a href="#" class="project-link secondary">View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 7 -->
+          <article class="project-card" data-category="web business">
+            <div class="project-visual">
+              <span class="status-badge status-planned">Planned</span>
+              <div class="project-icon">🍽️</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-category">Landing Page</div>
+              <h3>Hospitality Event Landing Page</h3>
+
+              <p>
+                A coded landing page for a restaurant event, designed to promote menus, offers and booking calls to action.
+              </p>
+
+              <ul class="project-features">
+                <li>Hero section with strong CTA</li>
+                <li>Event details and pricing</li>
+                <li>Responsive layout</li>
+                <li>Booking-focused design</li>
+              </ul>
+
+              <div class="project-tech">
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">Responsive Design</span>
+                <span class="tech-pill">Landing Page</span>
+              </div>
+
+              <div class="project-links">
+                <a href="#" class="project-link primary">Live Demo</a>
+                <a href="#" class="project-link secondary">View Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT STRATEGY -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2>Why these projects?</h2>
+          <p>
+            The project selection is intentional. Each project is connected to a real-world area I understand,
+            while also demonstrating useful technical skills for junior development and IT roles.
+          </p>
+        </div>
+
+        <div class="strategy-grid">
+          <article class="strategy-card">
+            <div class="strategy-number">01</div>
+            <h3>Real-world context</h3>
+            <p>
+              The projects are based on real problems from finance, hospitality, motorcycles, productivity and IT support.
+              This makes them more credible than generic tutorial projects.
+            </p>
+          </article>
+
+          <article class="strategy-card">
+            <div class="strategy-number">02</div>
+            <h3>Practical technical skills</h3>
+            <p>
+              They demonstrate HTML, CSS, JavaScript, responsive layouts, form handling, data organisation, filtering
+              and local storage.
+            </p>
+          </article>
+
+          <article class="strategy-card">
+            <div class="strategy-number">03</div>
+            <h3>Career positioning</h3>
+            <p>
+              The portfolio connects my previous work experience with my technical direction, showing that I can build
+              useful tools for real users and businesses.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section>
+      <div class="container">
+        <div class="cta">
+          <h2>Each project is part of the transition.</h2>
+
+          <p>
+            My goal is not to fill a portfolio with random apps. My goal is to build practical projects that show
+            problem solving, reliability and a clear path toward junior development and IT roles.
+          </p>
+
+          <div class="cta-actions">
+            <a href="about.html" class="btn btn-secondary">Read About Me</a>
+            <a href="contact.html" class="btn btn-primary">Contact Me</a>
+            <a href="assets/documents/Fabio-DAnna-Resume.pdf" class="btn btn-primary" download>
+  Download PDF Resume
+</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 Fabio D'Anna. All rights reserved.</p>
+
+      <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
